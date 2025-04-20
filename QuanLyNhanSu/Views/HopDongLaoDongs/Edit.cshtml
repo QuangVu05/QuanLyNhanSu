@@ -1,0 +1,104 @@
+﻿@model QuanLyNhanSu.ViewModels.HopDongViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="container mt-4">
+    <h2 class="text-center">Chỉnh sửa hợp đồng lao động</h2>
+    <hr />
+    <!-- Form chỉnh sửa hợp đồng -->
+    <form asp-action="Edit" method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+        <!-- ID Hợp Đồng (Ẩn) -->
+        <input type="hidden" asp-for="HopDongMoi.IdHD" />
+
+        <div class="row">
+            <div class="col-md-6">
+                <label class="form-label">Số hợp đồng </label>
+                <input type="text" class="form-control" asp-for="HopDongMoi.SoHD" maxlength="50">
+                <span asp-validation-for="HopDongMoi.SoHD" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Nhân viên </label>
+                <select asp-for="HopDongMoi.IdNV" asp-items="ViewBag.IdNV" class="form-control"></select>
+                <span asp-validation-for="HopDongMoi.IdNV" class="text-danger"></span>
+            </div>
+        </div>
+       
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <label class="form-label">Ngày ký</label>
+                <input type="date" value="@Model.HopDongMoi.NgayKy?.ToString("yyyy-MM-dd")" class="form-control" asp-for="HopDongMoi.NgayKy">
+                <span asp-validation-for="HopDongMoi.NgayKy" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Ngày bắt đầu</label>
+                <input type="date" value="@Model.HopDongMoi.NgayBatDau?.ToString("yyyy-MM-dd")" class="form-control" asp-for="HopDongMoi.NgayBatDau">
+                <span asp-validation-for="HopDongMoi.NgayBatDau" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <label class="form-label">Ngày kết thúc</label>
+                <input type="date" value="@Model.HopDongMoi.NgayKetThuc?.ToString("yyyy-MM-dd")" class="form-control" asp-for="HopDongMoi.NgayKetThuc">
+                <span asp-validation-for="HopDongMoi.NgayKetThuc" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Loại hợp đồng</label>
+                <input type="text" class="form-control" asp-for="HopDongMoi.LoaiHopDong">
+                <span asp-validation-for="HopDongMoi.LoaiHopDong" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <label class="form-label">Lương cơ bản</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" asp-for="HopDongMoi.LuongCoBan"   aria-describedby="vnd-addon" />
+                    <span class="input-group-text" id="vnd-addon">VND</span>
+                </div>
+                <span asp-validation-for="HopDongMoi.LuongCoBan" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Hệ số lương</label>
+                <input type="number" class="form-control" asp-for="HopDongMoi.HeSoLuong">
+                <span asp-validation-for="HopDongMoi.HeSoLuong" class="text-danger"></span>
+            </div>
+        </div>
+
+       
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <label class="form-label">Nội dung</label>
+                <textarea  id="noidung" class="form-control" asp-for="HopDongMoi.NoiDung"></textarea>
+                <span asp-validation-for="HopDongMoi.NoiDung" class="text-danger"></span>
+
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3">
+            <div>
+                <a asp-action="Index"> ← Quay lại</a>
+            </div>
+            <button type="submit" class="btn btn-warning"><i class="fas fa-edit"></i> Cập nhật</button>
+        </div>
+      
+    </form>
+
+   
+</div>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

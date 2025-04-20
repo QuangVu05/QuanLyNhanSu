@@ -1,0 +1,168 @@
+﻿
+@model List<QuanLyNhanSu.Models.TienLuong>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class=" text-center" style="margin-top: 20px;">Quản lý tiền lương</h2>
+
+<div style="margin-top:20px; margin-bottom: 20px">
+    <a asp-action="Create" type="submit" class="btn btn-primary mt-2"><i class="bi bi-plus-circle"></i> Tính lương</a>
+    <a asp-action="ExportToExcel" 
+       asp-route-thang="@ViewBag.Thang"
+       asp-route-nam="@ViewBag.Nam"
+       class="btn btn-success mt-2"><i class="fas fa-file-excel"></i> Xuất Excel</a>
+</div>
+
+<!-- Tìm kiếm & Lọc -->
+<form method="get" class="mt-3">
+    <div class="row g-2 align-items-center">
+        <!-- Chọn năm -->
+        <div class="col-md-2">
+            <label for="Nam" class="form-label fw-bold">Năm</label>
+            <select name="Nam" id="Nam" class="form-select">
+                <option value="">Chọn năm</option>
+                @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                {
+                    <option value="@i" selected="@(ViewBag.Nam == i)">@i</option>
+                }
+            </select>
+        </div>
+
+        <!-- Chọn tháng -->
+        <div class="col-md-2">
+            <label for="Thang" class="form-label fw-bold">Tháng</label>
+            <select name="Thang" id="Thang" class="form-select">
+                <option value="">Chọn tháng</option>
+                @for (int i = 1; i <= 12; i++)
+                {
+                    <option value="@i" selected="@(ViewBag.Thang == i)">@i</option>
+                }
+            </select>
+        </div>
+
+        <!-- Nút lọc -->
+        <div class="col-md-2">
+            <label class="d-block form-label invisible">.</label>
+            <button type="submit" class="btn btn-secondary w-500">
+                <i class="fas fa-filter"></i> Lọc
+            </button>
+        </div>
+    </div>
+</form>
+
+
+
+<hr />
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách lương 
+            @if (ViewBag.Thang != null && ViewBag.Nam != null)
+            {
+                @($"tháng {ViewBag.Thang} - năm {ViewBag.Nam}")
+            }
+            else if (ViewBag.Thang != null)
+            {
+                @($"tháng {ViewBag.Thang}")
+            }
+            else if (ViewBag.Nam != null)
+            {
+                @($"năm {ViewBag.Nam}")
+            }
+    </div>
+    <div class="card-body text-center">
+<!-- Danh Sách Lương -->
+        <table class="table table-bordered  text-center" id="datatablesSimple">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Mã nhân viên</th>
+            <th>Nhân viên</th>
+            <th>Tháng</th>
+            <th>Năm</th>
+            <th>Ngày công</th>
+            <th>Tăng ca(VND)</th>
+            <th>Đã ứng(VND)</th>
+            <th>Tổng lương(VND) </th>
+            <th>Nhận tiền</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            int stt = 1;
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(stt++)</td>
+                    <td>@item.NhanVien?.MaNV</td>
+                    <td>@item.NhanVien?.TenNV</td>
+                    <td>@item.Thang</td>
+                    <td>@item.Nam</td>
+                    <td>@item.SoNgayCong</td>
+                    <td>@(item.LuongTangCa?.ToString("N0") ?? "0")</td>
+                    <td>@(item.LuongDaUng?.ToString("N0") ?? "0")</td>
+                    <td>@item.TongLuong.ToString("N0")</td>
+                    <td>
+                              <div class="d-flex gap-3">
+                            <form asp-action="ToggleNhanTien" asp-route-id="@item.IdTL" asp-route-thang="@ViewBag.Thang" asp-route-nam="@ViewBag.Nam" method="post" onsubmit="return confirm('Xác nhận thao tác này?');">
+                                @if (item.DaNhanTien)
+                                {
+                                        <button type="submit" class="btn btn-secondary btn-sm p-1">
+                                        <i class="fas fa-undo"></i> Hoàn tác
+                                    </button>
+                                }
+                                else
+                                {
+                                        <button type="submit" class="btn btn-success  btn-sm p-1">
+                                        <i class="fas fa-check"></i> Xác nhận
+                                    </button>
+                                }
+                            </form>
+                            </div>
+                    </td>
+                    <td >
+                        <div style="display: flex; gap: 10px;">
+                            <a asp-action="Edit" asp-route-id="@item.IdTL" class="btn btn-warning btn-sm"> <i class="fas fa-edit"></i> Sửa</a>
+                            <a asp-action="Details" asp-route-id="@item.IdTL" class="btn btn-info btn-sm"><i class="fas fa-eye"></i> Xem</a>
+                            <a asp-action="Delete" asp-route-thang="@ViewBag.Thang" asp-route-nam="@ViewBag.Nam" asp-route-id="@item.IdTL" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="8" class="text-center">Không có dữ liệu</td></tr>
+        }
+    </tbody> 
+ </table> 
+ </div>
+ </div>
+ 
+@* <!-- Phân trang -->
+ <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-">
+        <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+            <a class="page-link" href="@Url.Action("Index", new { page = 1, search = ViewBag.SearchString, Thang = ViewBag.Thang, Nam = ViewBag.Nam })">Đầu</a>
+        </li>
+        <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+            <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber - 1, search = ViewBag.SearchString, Thang = ViewBag.Thang, Nam = ViewBag.Nam })">Trước</a>
+        </li>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i, search = ViewBag.SearchString, Thang = ViewBag.Thang, Nam = ViewBag.Nam })">@i</a>
+            </li>
+        }
+        <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+            <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber + 1, search = ViewBag.SearchString, Thang = ViewBag.Thang, Nam = ViewBag.Nam })">Tiếp</a>
+        </li>
+        <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+            <a class="page-link" href="@Url.Action("Index", new { page = Model.PageCount, search = ViewBag.SearchString, Thang = ViewBag.Thang, Nam = ViewBag.Nam })">Cuối</a>
+        </li>
+    </ul>
+</nav> *@

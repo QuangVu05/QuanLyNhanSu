@@ -1,0 +1,113 @@
+﻿@model QuanLyNhanSu.Models.HopDongLaoDong
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Chi Tiết Hợp Đồng Lao Động</h2>
+    <hr />
+
+    <div class="card-body">
+            <div class="row gx-4">
+                <!-- Cột 1: Thông tin hợp đồng bên trái -->
+                <div class="col-md-6 mt-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="mb-3">
+                                <span class="fw-bold">Số hợp đồng:</span>
+                                <span>@Model.SoHD</span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Nhân viên:</span>
+                                <span>@Model.NhanVien?.MaNV - @Model.NhanVien?.TenNV</span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Ngày ký:</span>
+                                <span>
+                                @if (Model.NgayKy != null)
+                                {
+                                    @Model.NgayKy?.ToString("yyyy-MM-dd")
+                                }
+                                </span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Ngày bắt đầu:</span>
+                                <span>
+                                @if (Model.NgayBatDau != null)
+                                {
+                                    @Model.NgayBatDau?.ToString("yyyy-MM-dd")
+                                }
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Cột 2: Thông tin hợp đồng bên phải -->
+                <div class="col-md-6 mt-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="mb-3">
+                                <span class="fw-bold">Loại hợp đồng:</span>
+                                <span>@Model.LoaiHopDong</span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Ngày kết thúc:</span>
+                                <span>
+                                @if (Model.NgayKetThuc != null)
+                                {
+                                    @Model.NgayKetThuc?.ToString("yyyy-MM-dd")
+                                }
+                                </span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Lương cơ bản:</span>
+                                <span>@Model.LuongCoBan</span>
+                            </p>
+                            <p class="mb-3">
+                                <span class="fw-bold">Hệ số lương:</span>
+                                <span>@Model.HeSoLuong</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dòng nội dung chi tiết hợp đồng -->
+             
+            
+            <div class="row mt-3">
+    <div class="col-12">
+        <div class="card shadow-sm">
+             <div class="card-header bg-light">
+                    <strong>Nội dung hợp đồng:</strong>
+                </div> 
+            <div class="card-body">
+                <p class="mb-3">
+                    
+                    <span>@Html.Raw(Model.NoiDung)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Thanh điều hướng dưới cùng -->
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                <a asp-action="Index" >
+                    ← Quay lại
+                </a>
+                <a asp-action="Edit" asp-route-id="@Model.IdHD" class="btn btn-warning btn-sm">
+                    <i class="fas fa-edit"></i> Sửa
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+

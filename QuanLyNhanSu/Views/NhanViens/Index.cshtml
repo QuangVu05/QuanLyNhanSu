@@ -1,0 +1,160 @@
+﻿@model IEnumerable<QuanLyNhanSu.ViewModels.NhanVienViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center" style="margin-top: 20px;">Quản lý nhân viên</h2>
+
+<div style="margin-top:20px; margin-bottom: 20px">
+    <a asp-action="Create"
+       asp-route-chucVu="@ViewBag.SelectedChucVu"
+       asp-route-phongBan="@ViewBag.SelectedPhongBan"
+       asp-route-trangThai="@ViewBag.SelectedTrangThai"
+    type="submit" class="btn btn-primary mt-2"><i class="bi bi-plus-circle"></i> Thêm nhân viên</a>
+    <a asp-action="ExportToExcel" asp-route-chucVu="@Context.Request.Query["chucVu"]"
+       asp-route-phongBan="@Context.Request.Query["phongBan"]"
+       asp-route-trangThai="@Context.Request.Query["trangThai"]"
+       class="btn btn-success mt-2"><i class="fas fa-file-excel"></i> Xuất Excel</a>
+</div>
+
+<form asp-action="Index" method="get" class="mt-3 mb-4">
+    <div class="row g-2 align-items-center">
+        <!-- Dropdown Chức Vụ -->
+        <div class="col-md-2">
+            <label for="Thang" class="form-label fw-bold">Chức vụ</label>
+            <select name="chucVu" id="chucVu" class="form-select">
+                <option value="">-- Chọn chức vụ --</option>
+                @foreach (var cv in ViewBag.ChucVus)
+                {
+                    <option value="@cv" selected="@(cv == ViewBag.SelectedChucVu ? "selected" : null)">@cv</option>
+                }
+            </select>
+        </div>
+
+        <!-- Dropdown Phòng Ban -->
+        <div class="col-md-2">
+            <label for="phongBan" class="form-label fw-bold">Phòng ban</label>
+            <select name="phongBan" id="phongBan" class="form-select">
+                <option value="">-- Chọn phòng ban --</option>
+                @foreach (var pb in ViewBag.PhongBans)
+                {
+                    <option value="@pb" selected="@(pb == ViewBag.SelectedPhongBan ? "selected" : null)">@pb</option>
+                }
+            </select>
+        </div>
+
+        <!-- Dropdown Trạng Thái -->
+        <div class="col-md-2">
+            <label for="trangThai" class="form-label fw-bold">Trạng thái</label>
+            <select name="trangThai" id="trangThai" class="form-select">
+                <option value="">-- Chọn trạng thái làm việc --</option>
+                @foreach (var tt in ViewBag.TrangThais)
+                {
+                    <option value="@tt" selected="@(tt == ViewBag.SelectedTrangThai ? "selected" : null)">@tt</option>
+                }
+            </select>
+        </div>
+
+        <!-- Nút lọc -->
+        <div class="col-md-2">
+            <label class="d-block form-label invisible">.</label>
+            <button type="submit" class="btn btn-secondary w-500"><i class="fas fa-filter"></i> Lọc</button>
+        </div>
+    </div>
+</form>
+
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách nhân viên
+    </div>
+    <div class="card-body text-center">
+        <table id="datatablesSimple" class="table table-bordered  text-center">
+            <thead class="table-info ">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã </th>
+                    <th>Ảnh </th>
+                    <th>Tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày sinh</th>
+                    <th>Quốc tịch</th>
+                    <th>Phòng ban</th>
+                    <th>Chức vụ</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                 @if (Model != null && Model.Any())
+        {
+                
+                
+                    int index = 1;
+                
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @index
+                        </td>
+                        <td>@item.MaNV</td>
+                        <td>
+                            <img src="@(!string.IsNullOrEmpty(item.Anh) ? item.Anh : "/images/anhDaiDien.png")"
+                                 alt="Ảnh nhân viên"
+                                 class="img-thumbnail"
+                                 style="width: 70px; height: 80px;" />
+
+                        </td>
+                        <td>@item.TenNV</td>
+                        <td>@item.SDT</td>
+                        <td>@item.NgaySinh?.ToString("dd/MM/yyyy")</td>
+                        <td>@item.QuocTich</td>
+                        <td>@item.TenPB</td>
+                        <td>@item.TenCV</td>
+                        <td>@item.TTLamViecs</td>
+                        <td>
+                            <div style="display: flex; gap: 10px;">
+                                <a asp-action="Edit"
+                                   asp-route-chucVu="@ViewBag.SelectedChucVu"
+                                   asp-route-phongBan="@ViewBag.SelectedPhongBan"
+                                   asp-route-trangThai="@ViewBag.SelectedTrangThai"
+                                   asp-route-id="@item.IdNV"
+                                   class="btn btn-warning btn-sm">
+                                   <i class="fas fa-edit"></i> Sửa</a>
+                                <a asp-action="Details" asp-route-id="@item.IdNV" class="btn btn-info btn-sm"><i class="fas fa-eye"></i> Xem</a>
+                                <a asp-route-chucVu="@ViewBag.SelectedChucVu"
+                                   asp-route-phongBan="@ViewBag.SelectedPhongBan"
+                                   asp-route-trangThai="@ViewBag.SelectedTrangThai"
+                                    asp-action="Delete" asp-route-id="@item.IdNV" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                            </div>
+                        </td>
+
+
+
+                    </tr>
+                    index++;
+                }
+                }
+                else
+                {
+                <tr>
+                    <td colspan="11" class="text-center">Không có dữ liệu</td>  
+                </tr>
+                }
+            </tbody>
+
+
+        </table>
+        <div class="error-message" id="noResultsMessage" style="display: none;">
+            <p>Không tìm thấy nhân viên phù hợp với tiêu chí tìm kiếm.</p>
+        </div>
+
+    </div>
+</div>
+
+

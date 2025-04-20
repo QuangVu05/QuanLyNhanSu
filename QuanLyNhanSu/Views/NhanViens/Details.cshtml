@@ -1,0 +1,96 @@
+﻿ @model QuanLyNhanSu.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 style="margin-top:20px">Chi tiết thông tin nhân viên</h3>
+<hr />
+
+<div class="container mt-4 ">
+    <!-- Hàng đầu: Ảnh và hai cột thông tin -->
+ 
+    <div class="row d-flex justify-content-between ">
+        <!-- Ảnh nhân viên -->
+        <div class="col-md-3 text-center">
+            <h5 class="mb-3">Ảnh Nhân Viên</h5>
+            <div class="card">
+                <img id="preview"
+                     src="@(!string.IsNullOrEmpty(Model.Anh) ? Model.Anh : "/images/anhDaiDien.png")"
+                     alt="Ảnh nhân viên"
+                     class="img-thumbnail"
+                     style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover;">
+            </div>
+        </div>
+
+        <!-- Cột 1 thông tin -->
+        <div class="col-md-4 mt-4">
+            <div class="card shadow-sm h-100">
+               @*  <div class="card-header bg-light">
+                    <strong>Thông tin chi tiết</strong>
+                </div> *@
+                <div class="card-body">
+                    <p class="mb-2"><span class="fw-bold">Mã nhân viên:</span> @Model.MaNV</p>
+                    <p class="mb-2"><span class="fw-bold">Tên nhân viên:</span> @Model.TenNV</p>
+                    <p class="mb-2"><span class="fw-bold">Giới tính:</span> @Model.GioiTinh?.GioiTinhs</p>
+                    <p class="mb-2"><span class="fw-bold">Ngày sinh:</span> @Model.NgaySinh?.ToString("dd/MM/yyyy")</p>
+                    <p class="mb-2"><span class="fw-bold">Căn cước công dân:</span> @Model.CCCD</p>
+                    <p class="mb-2"><span class="fw-bold">Số điện thoại:</span> @Model.SDT</p>
+                    <p class="mb-2"><span class="fw-bold">Quốc tịch:</span> @Model.QuocTich</p>
+                    <p class="mb-2"><span class="fw-bold">Dân tộc:</span> @Model.DanToc.TenDT</p>
+                    <p class="mb-2"><span class="fw-bold">Tôn giáo:</span> @Model.TonGiao.TenTG</p>
+                    <p class="mb-0"><span class="fw-bold">Trình độ:</span> @Model.TrinhDo.TenTD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cột 2 thông tin -->
+        <div class="col-md-4 mt-4">
+            <div class="card shadow-sm h-100">
+               @*  <div class="card-header bg-light">
+                    <strong>Thông tin chi tiết</strong>
+                </div> *@
+                <div class="card-body">
+                    <p class="mb-2"><span class="fw-bold">Nơi sinh:</span> @Model.NoiSinh</p>
+                    <p class="mb-2"><span class="fw-bold">Hộ khẩu:</span> @Model.HoKhau</p>
+                    <p class="mb-2"><span class="fw-bold">Quê quán:</span> @Model.QueQuan</p>
+                    <p class="mb-2"><span class="fw-bold">Tạm chú:</span> @Model.TamChu</p>
+                    <p class="mb-2"><span class="fw-bold">Tình trạng hôn nhân:</span> @Model.TTHonNhan.TTHonNhans</p>
+                    <p class="mb-2"><span class="fw-bold">Loại nhân viên:</span> @Model.LoaiNhanVien.LoaiNV</p>
+                    <p class="mb-2"><span class="fw-bold">Trạng thái làm việc:</span> @Model.TTLamViec.TTLamViecs</p>
+                    <p class="mb-2"><span class="fw-bold">Bộ phận:</span> @Model.BoPhan.TenBP</p>
+                    <p class="mb-2"><span class="fw-bold">Phòng ban:</span> @Model.PhongBan.TenPB</p>
+                    <p class="mb-0"><span class="fw-bold">Chức vụ:</span> @Model.ChucVu.TenCV</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between ">
+                    <div>
+                        <a asp-action="Index"
+                           asp-route-chucVu="@ViewBag.SelectedChucVu"
+                           asp-route-phongBan="@ViewBag.SelectedPhongBan"
+                           asp-route-trangThai="@ViewBag.SelectedTrangThai"
+                           class="text-decoration-none">
+                            ← Quay lại
+                        </a>
+                    </div>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@Model?.IdNV" class="btn btn-warning btn-sm me-2">
+                            <i class="fas fa-edit"></i> Sửa
+                        </a>
+                        <a asp-action="ExportToWord" asp-route-id="@Model?.IdNV" class="btn btn-primary btn-sm">
+                            <i class="fas fa-file-word"></i> Xuất Word
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thanh điều hướng dưới cùng -->
+   
+   
+</div>

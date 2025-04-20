@@ -1,0 +1,26 @@
+﻿@model QuanLyNhanSu.Models.BoPhan
+
+
+<form data-ajax="true" action="@Url.Action("Edit", "BoPhans")" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="IdBP" />
+    <div class="modal-body">
+        <div class="form-group">
+            <label asp-for="TenBP" class="control-label"> <strong>Tên bộ phận:</strong></label>
+            <input asp-for="TenBP" class="form-control" />
+            <span asp-validation-for="TenBP" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+    </div>
+</form>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

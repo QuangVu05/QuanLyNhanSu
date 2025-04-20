@@ -1,0 +1,36 @@
+﻿@model QuanLyNhanSu.ViewModels.LoaiCaViewModel
+
+
+<form data-ajax="true" action="@Url.Action("Edit", "LoaiCas")" method="post">
+    <input type="hidden" asp-for="IdCa" />
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="modal-body">
+        
+        <div class="mb-3">
+            <label class="form-label">Tên ca</label>
+            <input asp-for="TenCa" type="text" class="form-control" id="TenCa">
+            <span asp-validation-for="TenCa" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Giờ bắt đầu</label>
+            <input asp-for="GioBatDau" type="time" class="form-control" id="GioBatDau">
+            <span asp-validation-for="GioBatDau" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Giờ kết thúc</label>
+            <input asp-for="GioKetThuc" type="time" class="form-control" id="GioKetThuc">
+            <span asp-validation-for="GioKetThuc" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Hệ số lương</label>
+            <input asp-for="HeSoLuong" type="number" class="form-control" id="HeSoLuong" step="0.1">
+            <span asp-validation-for="HeSoLuong" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+    </div>
+
+</form>

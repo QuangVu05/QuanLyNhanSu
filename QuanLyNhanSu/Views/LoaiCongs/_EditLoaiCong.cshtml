@@ -1,0 +1,30 @@
+﻿@model QuanLyNhanSu.Models.LoaiCong
+
+
+<form data-ajax="true" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="IdCong" />
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label asp-for="TenCong" class="control-label">
+                <strong>Tên công:</strong>
+            </label>
+            <input asp-for="TenCong" class="form-control" />
+            <span asp-validation-for="TenCong" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="HeSoLuong" class="control-label">
+                <strong>Hệ số lương:</strong>
+            </label>
+            <input asp-for="HeSoLuong" class="form-control" type="number" step="0.1" />
+            <span asp-validation-for="HeSoLuong" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+    </div>
+
+</form>

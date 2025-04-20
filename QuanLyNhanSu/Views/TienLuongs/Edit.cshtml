@@ -1,0 +1,147 @@
+﻿@model QuanLyNhanSu.Models.TienLuong
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-4">
+    <div class="card shadow-lg">
+        <div class="card-header bg-warning text-white">
+            <h4 class="mb-0">Chỉnh sửa tiền lương</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="IdTL" />
+               <!-- Lưu ID tiền lương cần chỉnh sửa -->
+                
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nhân viên</label>
+                    <input type="text"   class="form-control" value="@($"{Model.NhanVien?.MaNV} - {Model.NhanVien?.TenNV}")" readonly />
+                    <input type="hidden" asp-for="IdNV" />
+                
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="Thang" class="form-label">Tháng</label>
+                            <select asp-for="Thang" class="form-select">
+                                <option value="">Chọn Tháng</option>
+                                @for (int i = 1; i <= 12; i++)
+                                {
+                                    <option value="@i" selected="@(i == Model.Thang ? "selected" : null)">@i</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Thang" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="Nam" class="form-label">Năm</label>
+                            <select asp-for="Nam" class="form-select">
+                                <option value="">Chọn Năm</option>
+                                @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                                {
+                                    <option value="@i" selected="@(i == Model.Nam ? "selected" : null)">@i</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Nam" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="hidden" asp-for="IdHD" />
+                    <div class="col-md-6">
+                        <label class="form-label">Lương Cơ Bản</label>
+                        <div class="input-group">
+                            <input type="text" id="luongCoBan" class="form-control" readonly value="@(Model.HopDongLaoDong?.LuongCoBan?.ToString("N0") ??  " 0")" aria-describedby="vnd-addon" />
+                            <span class="input-group-text" id="vnd-addon">VND</span>
+                        </div>
+                         
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Hệ Số Lương</label>
+                        <input type="text" id="heSoLuong" class="form-control" readonly value="@Model.HopDongLaoDong?.HeSoLuong" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="SoNgayCong" class="form-label">Số Ngày Công </label>
+                    <input asp-for="SoNgayCong" class="form-control" id="SoNgayCong" value="@Model.SoNgayCong" />
+                    <span asp-validation-for="SoNgayCong" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="LuongTangCa" class="form-label">Lương Tăng Ca</label>
+                    <div class="input-group">
+                        <input type="number" asp-for="LuongTangCa" class="form-control" id="LuongTangCa"  aria-describedby="vnd-addon" />
+                        <span class="input-group-text" id="vnd-addon">VND</span>
+                    </div>
+                    
+                    <span asp-validation-for="LuongTangCa" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    
+                    <label asp-for="LuongDaUng" class="form-label">Lương Đã Ứng</label>
+                    <div class="input-group">
+                        <input type="number" asp-for="LuongDaUng" class="form-control" id="LuongDaUng"  aria-describedby="vnd-addon" />
+                        <span class="input-group-text" id="vnd-addon">VND</span>
+                    </div>
+                     
+                    <span asp-validation-for="LuongDaUng" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tổng Lương</label>
+                    <div class="input-group">
+                        <input id="TongLuong" class="form-control" disabled value="@(Model.TongLuong)" aria-describedby="vnd-addon" />
+                        <span class="input-group-text" id="vnd-addon">VND</span>
+                    </div>
+                    
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" asp-route-thang="@Model.Thang" asp-route-nam="@Model.Nam">← Quay lại</a>
+                    <button type="submit" class="btn btn-warning"><i class="fas fa-edit"></i> Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        // Khi thay đổi số ngày công, lương tăng ca, lương đã ứng thì tính lại tổng lương
+        $('#SoNgayCong, #LuongTangCa, #LuongDaUng').on('input', function () {
+            tinhTongLuong();
+        });
+
+        function tinhTongLuong() {
+            var luongCoBan = parseFloat($('#luongCoBan').val().replace(/,/g, '')) || 0;
+            var heSoLuong = parseFloat($('#heSoLuong').val().replace(/,/g, '')) || 0;
+            var soNgayCong = parseInt($('#SoNgayCong').val().replace(/,/g, '')) || 0;
+            var luongTangCa = parseFloat($('#LuongTangCa').val().replace(/,/g, '')) || 0;
+            var luongDaUng = parseFloat($('#LuongDaUng').val().replace(/,/g, '')) || 0;
+
+            var tongLuong = (luongCoBan * heSoLuong / 26 * soNgayCong) + luongTangCa - luongDaUng;
+
+            // Định dạng lại số có dấu phẩy
+            $('#TongLuong').val(tongLuong.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        }
+    });
+
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

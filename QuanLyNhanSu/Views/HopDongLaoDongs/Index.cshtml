@@ -1,0 +1,90 @@
+﻿@model QuanLyNhanSu.ViewModels.HopDongViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2 class="text-center mt-3">Quản Lý Hợp Đồng Lao Động</h2>
+<div style="margin-top:20px; margin-bottom: 20px">
+    <a asp-action="Create" type="submit" class="btn btn-primary mt-2"><i class="bi bi-plus-circle"></i> Tạo hợp đồng</a>
+
+</div>
+
+
+        <!-- Danh sách hợp đồng -->
+        
+    
+    <div class="card mb-4 mt-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Danh sách hợp đồng
+        </div>
+        <div class="card-body">
+        <table id="datatablesSimple" class="table  table-bordered table-hover table-sm card-body text-center">
+            <thead >
+                    <tr>
+                        <th>STT</th>
+                        <th>Số HD</th>
+                        <th>Nhân viên</th>
+                        <th>Ngày ký</th>
+                        <th>Ngày bắt đầu</th>
+                        <th>Ngày kết thúc</th>
+                        <th>Lương Cơ Bản</th>
+                        <th>Hệ Số Lương</th>
+                        <th>Trạng Thái</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int index = 1;
+                    }
+                    @foreach (var item in Model.DanhSachHopDong)
+                    {
+                        <tr>
+                            <td>
+                                @index
+                            </td>
+                            <td>@item.SoHD</td>
+
+                            <td>@($"{item.NhanVien?.MaNV} - {item.NhanVien?.TenNV}")</td>
+                            <td>@item.NgayKy?.ToString("dd/MM/yyyy")</td>
+                            <td>@item.NgayBatDau?.ToString("dd/MM/yyyy")</td>
+                            <td>@item.NgayKetThuc?.ToString("dd/MM/yyyy")</td>
+                            <td>@(item.LuongCoBan?.ToString("N0") ?? "0")VND</td>
+                            <td> @item.HeSoLuong</td>
+                            <td>
+                                @if (item.NgayKetThuc != null && item.NgayKetThuc <= DateTime.Now)
+                                {
+                                    <span style="color: red;">Đã Hết Hạn</span>
+                                }
+                                else
+                                {
+                                    <span style="color: blue;">Còn hiệu lực</span>
+                                }
+                            </td>
+                            <td>
+                            <div class="d-flex gap-1">
+                                    <a asp-action="Edit" asp-route-id="@item.IdHD" class="btn btn-warning btn-sm"> <i class="fas fa-edit"></i> Sửa</a>
+                                    <a asp-action="Details" asp-route-id="@item.IdHD" class="btn btn-info btn-sm"><i class="fas fa-eye"></i> Xem</a>
+                                    <a asp-action="Delete" asp-route-id="@item.IdHD" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        index++;
+                    }
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+  
+
+
