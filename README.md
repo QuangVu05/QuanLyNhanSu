@@ -78,6 +78,26 @@ Update-Database
 Chạy ứng dụng (F5 hoặc Debug -> Start Debugging).
 
 📸 Một số hình ảnh minh họa
-![image](https://github.com/user-attachments/assets/12ce3410-1df6-4c2d-9b61-7a788cc966e0)
+
+![image](https://github.com/user-attachments/assets/fb6f8bf1-f916-4a7c-a0b9-5b5134bf2e34)
+
+![image](https://github.com/user-attachments/assets/d4daf8d5-f454-4e49-a4a0-b5bac1a83bad)
+
+![image](https://github.com/user-attachments/assets/b09bd74b-c497-4008-9311-a5dc1ba6a2c8)
+
+![image](https://github.com/user-attachments/assets/146e33e9-7c4d-49b1-a838-e88623a49983)
+
+![image](https://github.com/user-attachments/assets/e0a73a80-7f4f-466b-85d2-e321fd54e338)
+
+![image](https://github.com/user-attachments/assets/8d7e7f38-cd3c-4df2-b7ca-007fd8e3c8ec)
+
+![image](https://github.com/user-attachments/assets/4b5d4365-4592-416d-8256-6477318d3f85)
+
+
+
+
+
+
+
 
 
