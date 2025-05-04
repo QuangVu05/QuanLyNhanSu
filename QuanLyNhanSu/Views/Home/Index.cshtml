@@ -1,0 +1,167 @@
+﻿@model QuanLyNhanSu.ViewModels.TongQuanViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container-fluid px-4">
+    <h2 class="mt-lg-4">Tổng Quan</h2>
+
+    <div class="row mt-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4 ">
+                <div class="card-body">
+                    <i class="fas fa-users"></i> Nhân viên: @Model.TongSoNhanVien
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="#">View Details</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4">
+                <div class="card-body "><i class="fas fa-building"></i> Phòng ban: @Model.TongSoPhongBan</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="#">View Details</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-4">
+                <div class="card-body">
+                    <i class="fas fa-file-contract"></i>
+                    Hợp đồng: @Model.TongSoHopDong
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="#">View Details</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-danger text-white mb-4">
+                    <div class="card-body"><i class="fas fa-key"></i>Tài khoản: @Model.TongSoTaiKhoan</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" href="#">View Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-pie me-1"></i>
+                    Thống kê nhân viên
+                </div>
+                <div class="card-body">
+                    <canvas id="employeeChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 col-md-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar me-1"></i>
+                    Thống kê số nhân viên theo phòng ban
+                </div>
+                <div class="card-body">
+                    <canvas id="workingEmployeesChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById("employeeChart").getContext("2d");
+
+        var employeeChart = new Chart(ctx, {
+            type: "doughnut", // Biểu đồ tròn
+            data: {
+                labels: ["Đang làm việc", "Đã nghỉ việc", "Tạm nghỉ"],
+                datasets: [{
+                    data: [@Model.NhanVienDangLamViec, @Model.NhanVienDaNghiViec, @Model.NhanVienTamNghi],
+                    backgroundColor: ["#36A2EB", "#FF6384", "#FFC107"], // Màu cho từng nhóm
+                    hoverBackgroundColor: ["#1E88E5", "#D32F2F", "#FFA000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById("workingEmployeesChart").getContext("2d");
+
+        var workingEmployeesChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.DanhSachPhongBan)), // Danh sách phòng ban
+                datasets: [
+                    {
+                        label: "Nhân viên đang làm việc",
+                        data: @Html.Raw(Json.Serialize(Model.NhanVienDangLamTheoPhongBan)),
+                        backgroundColor: "rgba(75, 192, 192, 0.7)",
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1
+                    },
+                    {
+                        label: "Nhân viên tạm nghỉ",
+                        data: @Html.Raw(Json.Serialize(Model.NhanVienTamNghiTheoPhongBan)),
+                        backgroundColor: "rgba(255, 206, 86, 0.7)", // Màu vàng
+                        borderColor: "rgba(255, 206, 86, 1)",
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+@* <div class="row">
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-chart-area me-1"></i>
+                            Area Chart Example
+                        </div>
+                        <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-chart-bar me-1"></i>
+                            Bar Chart Example
+                        </div>
+                        <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                    </div>
+                </div>
+            </div> *@
+
+
+
+
+

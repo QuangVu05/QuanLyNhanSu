@@ -1,0 +1,119 @@
+﻿<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading">Core</div>
+                <a class="nav-link" asp-controller="Home" asp-action="Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Tổng quan
+                </a>
+                <div class="sb-sidenav-menu-heading">Interface</div>
+                 @if (User.IsInRole("Admin") || User.IsInRole("HR Manager"))
+
+                {
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                        Nhân viên
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" asp-controller="NhanViens" asp-action="Index">Danh sách nhân viên</a>
+                        <a class="nav-link" asp-controller="NhanViens" asp-action="Create">Thêm nhân viên</a>
+                        <a class="nav-link" asp-controller="BoPhans" asp-action="Index">Bộ phận</a>
+                        <a class="nav-link" asp-controller="PhongBans" asp-action="Index">Phòng ban</a>
+                        <a class="nav-link" asp-controller="ChucVus" asp-action="Index">Chức vụ</a>
+                        <a class="nav-link" asp-controller="DanTocs" asp-action="Index">Dân tộc</a>
+                        <a class="nav-link" asp-controller="TonGiaos" asp-action="Index">Tôn giáo</a>
+                        <a class="nav-link" asp-controller="TrinhDoes" asp-action="Index">Trình độ</a>
+
+
+                    </nav>
+                </div>
+                }
+                @if (User.IsInRole("Admin") || User.IsInRole("Accountant"))
+
+                {
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTienLuong" aria-expanded="false" aria-controls="#collapseChamCong">
+                        <div class="sb-nav-link-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        Tiền Lương
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+
+
+                    <div class="collapse" id="collapseTienLuong" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="TienLuongs" asp-action="Create">Tính lương</a>
+                            <a class="nav-link" asp-controller="TienLuongs" asp-action="Index">Danh sách lương</a>
+
+
+                        </nav>
+                    </div>
+                }
+                @if (User.IsInRole("Admin") || User.IsInRole("HR Manager"))
+
+                {
+                    <a class="nav-link" asp-controller="HopDongLaoDongs" asp-action="Index">
+                        <div class="sb-nav-link-icon"><i class="fas fa-file-contract"></i></div>
+                        Hợp đồng lao động
+                    </a> 
+
+
+                    <authorize roles="Admin,HR Manager">
+                        <a class="nav-link" asp-controller="KhenThuong_KyLuat" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-balance-scale"></i></div>
+                            Khen thưởng - kỷ luật
+                        </a>
+                    </authorize>
+                }
+                @if (User.IsInRole("Admin"))
+                    {
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTaiKhoan" aria-expanded="false" aria-controls="#collapseChamCong">
+                            <div class="sb-nav-link-icon"><i class="fas fa-key"></i></div>
+                            Tài khoản
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+
+                        <div class="collapse" id="collapseTaiKhoan" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" asp-controller="Account" asp-action="CreateUser">Tạo tài khoản</a>
+                                <a class="nav-link" asp-controller="Account" asp-action="UserList">Danh sách tài khoản</a>
+
+                            </nav>
+                        </div>
+                    }
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseChamCong" aria-expanded="false" aria-controls="#collapseChamCong">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Chấm công
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+
+                    <div class="collapse" id="collapseChamCong" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" asp-controller="LoaiCas" asp-action="Index">Loại ca</a>
+                            <a class="nav-link" asp-controller="LoaiCongs" asp-action="Index">Loại công</a>
+
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+            @if (User.IsInRole("Admin"))
+            {
+                <span>Admin</span>
+            }
+            else if (User.IsInRole("HR Manager"))
+            {
+                <span>HR Manager</span>
+            }
+            else
+            {
+                <span>Accountant</span>
+            }
+            </div>
+        </nav>
+    </div>

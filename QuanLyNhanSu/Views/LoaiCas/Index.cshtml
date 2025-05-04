@@ -1,0 +1,178 @@
+﻿@model  QuanLyNhanSu.ViewModels.LoaiCaViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin-top:20px; margin-bottom: 20px">
+    <h2 class="text-center">Quản lý ca</h2>
+    <button class="btn btn-primary" onclick="showModal('@Url.Action("Create", "LoaiCas")', 'Thêm loại công')">
+        <i class="bi bi-plus-circle"></i> Thêm loại cá
+    </button>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách loại ca
+    </div>
+    <table class="table  table-bordered table-hover table-sm card-body text-center">
+        <thead class="table-info">
+            <tr>
+                <th>STT</th>
+                <th>Tên Ca</th>
+                <th>Giờ Bắt Đầu</th>
+                <th>Giờ Kết Thúc</th>
+                <th>Tổng giờ</th>
+                <th>Hệ Số Lương</th>
+                <th style="width: 12%;">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 1;
+            }
+            @foreach (var item in Model.LoaiCaList)
+            {
+                <tr>
+                    <td>@index</td>
+                    <td>@item.TenCa</td>
+                    <td>@item.GioBatDau?.ToString(@"hh\:mm")</td>
+                    <td>@item.GioKetThuc?.ToString(@"hh\:mm")</td>
+                    <td>
+                        @{
+                            if (item.TongGioLam.HasValue)
+                            {
+                                TimeSpan timeSpan = TimeSpan.FromHours(item.TongGioLam.Value);
+                                @timeSpan.ToString(@"hh\:mm")
+                            }
+                            else
+                            {
+                                <text>Không xác định</text>
+                            }
+                        }
+                    </td>
+                    <td>@item.HeSoLuong</td>
+                    <td text-nowrap p-1>
+                        <div class="d-flex gap-1">
+
+                            <a class="btn btn-warning btn-sm" onclick="showModal('@Url.Action("Edit", "LoaiCas", new { id = item.IdCa })', 'Chỉnh sửa thông tin ca')"> <i class="fas fa-edit"></i> Sửa</a>
+
+                            <a asp-action="Delete" asp-route-id="@item.IdCa" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                        </div>
+                    </td>
+                </tr>
+                index++;
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal dùng chung -->
+<!-- Sửa tên modal thành modalForm -->
+<div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Nội dung Form sẽ được load từ AJAX -->
+            </div>
+        </div>
+    </div>
+</div>
+@* <div class="container mt-4">
+    <h2 class="text-center">Quản lý ca</h2>
+
+    <!-- Form thêm mới ca làm việc -->
+    <div class="card mt-4">
+        <div class="card-header bg-primary text-white">
+            Thêm loại ca mới
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <label class="form-label">Tên ca</label>
+                    <input  asp-for="TenCa" type="text" class="form-control" id="TenCa" >
+                    <span asp-validation-for="TenCa" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Giờ bắt đầu</label>
+                    <input asp-for="GioBatDau" type="time" class="form-control" >
+                    <span asp-validation-for="GioBatDau" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Giờ kết thúc</label>
+                    <input asp-for="GioKetThuc" type="time" class="form-control" >
+                    <span asp-validation-for="GioKetThuc" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hệ số lương</label>
+                    <input asp-for="HeSoLuong"  type="number" class="form-control"  step="0.1"/>
+                    <span asp-validation-for="HeSoLuong" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-success">Thêm Ca</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Danh sách hợp đồng
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên Ca</th>
+                        <th>Giờ Bắt Đầu</th>
+                        <th>Giờ Kết Thúc</th>
+                        <th>Tổng giờ</th>
+                        <th>Hệ Số Lương</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int index = 1;
+                    }
+                    @foreach (var item in Model.LoaiCaList)
+                    {
+                        <tr>
+                            <td>
+                                @index
+                            </td>
+                            <td>@item.TenCa</td>
+                            <td>@item.GioBatDau?.ToString(@"hh\:mm")</td>
+                            <td>@item.GioKetThuc?.ToString(@"hh\:mm")</td>
+                            <td>@Math.Abs(Math.Round((item.GioKetThuc.GetValueOrDefault() - item.GioBatDau.GetValueOrDefault()).TotalHours, 2))</td>
+                            <td> @item.HeSoLuong</td>
+                           
+                            <td>
+                                <div style="display: flex; gap: 5px;">
+                                    <a asp-action="Edit" asp-route-id="@item.IdCa" class="btn btn-warning btn-sm"> <i class="fas fa-edit"></i> Sửa</a>
+                                    
+                                    <a asp-action="Delete" asp-route-id="@item.IdCa" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                                </div>
+                            </td>
+
+
+
+                        </tr>
+                        index++;
+                    }
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+   
+</div> *@

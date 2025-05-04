@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuanLyNhanSu.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuanLyNhanSu.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\ckeditor-init.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\ckeditor-init.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\demo\\select2-custom.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\select2-custom.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\008871ab-dd39-4c92-b21f-72d36e2f5f32.webp",
+      "PackagePath": "staticwebassets\\images\\008871ab-dd39-4c92-b21f-72d36e2f5f32.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\04ec68eb-a93e-4cf8-aa32-cbac5d4faf36.webp",
+      "PackagePath": "staticwebassets\\images\\04ec68eb-a93e-4cf8-aa32-cbac5d4faf36.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\13c522f8-28c7-487b-8553-8ffbf7f55912.webp",
+      "PackagePath": "staticwebassets\\images\\13c522f8-28c7-487b-8553-8ffbf7f55912.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\1984b6a3-7415-4ab8-9f17-c16aa7a50d7a.webp",
+      "PackagePath": "staticwebassets\\images\\1984b6a3-7415-4ab8-9f17-c16aa7a50d7a.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\20ac0c8d-6a7e-400e-875d-7a5158c314ca.webp",
+      "PackagePath": "staticwebassets\\images\\20ac0c8d-6a7e-400e-875d-7a5158c314ca.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\22e97970-49d8-411c-a08b-9d1f4e1f6e08.webp",
+      "PackagePath": "staticwebassets\\images\\22e97970-49d8-411c-a08b-9d1f4e1f6e08.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\2c357bd9-f6e5-40ba-b1db-83170468f54b.webp",
+      "PackagePath": "staticwebassets\\images\\2c357bd9-f6e5-40ba-b1db-83170468f54b.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\6a81570a-b1c1-4e37-8520-c66dc214fecc.jfif",
+      "PackagePath": "staticwebassets\\images\\6a81570a-b1c1-4e37-8520-c66dc214fecc.jfif"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\93f7d9ae-524a-4910-a6e0-6dd61c217e64.webp",
+      "PackagePath": "staticwebassets\\images\\93f7d9ae-524a-4910-a6e0-6dd61c217e64.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\9890a2fb-6de3-4653-aeaf-e1ee3cf8e02c.webp",
+      "PackagePath": "staticwebassets\\images\\9890a2fb-6de3-4653-aeaf-e1ee3cf8e02c.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\9c77846c-e7f0-4b68-825a-ff8994af4e14.webp",
+      "PackagePath": "staticwebassets\\images\\9c77846c-e7f0-4b68-825a-ff8994af4e14.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\9d6ee242-6f2f-4551-8d75-795ac79494a0.webp",
+      "PackagePath": "staticwebassets\\images\\9d6ee242-6f2f-4551-8d75-795ac79494a0.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\anhDaiDien.png",
+      "PackagePath": "staticwebassets\\images\\anhDaiDien.png"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\bca232cb-f7e5-4dfa-ab4a-0c17cb5d46e7.png",
+      "PackagePath": "staticwebassets\\images\\bca232cb-f7e5-4dfa-ab4a-0c17cb5d46e7.png"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\d6032ab1-253e-4d16-be93-cd2a00346998.webp",
+      "PackagePath": "staticwebassets\\images\\d6032ab1-253e-4d16-be93-cd2a00346998.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\e949eafc-f19b-4569-b5f7-1d7c77d2a14d.png",
+      "PackagePath": "staticwebassets\\images\\e949eafc-f19b-4569-b5f7-1d7c77d2a14d.png"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\ecbdc0da-40e6-4723-9579-8eddcc1f5237.webp",
+      "PackagePath": "staticwebassets\\images\\ecbdc0da-40e6-4723-9579-8eddcc1f5237.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\images\\fce788ac-cc2b-45e2-b7ea-bc0d0ca150d2.webp",
+      "PackagePath": "staticwebassets\\images\\fce788ac-cc2b-45e2-b7ea-bc0d0ca150d2.webp"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\js\\modal-handler.js",
+      "PackagePath": "staticwebassets\\js\\modal-handler.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuanLyNhanSu.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.QuanLyNhanSu.props",
+      "PackagePath": "build\\QuanLyNhanSu.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QuanLyNhanSu.props",
+      "PackagePath": "buildMultiTargeting\\QuanLyNhanSu.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.QuanLyNhanSu.props",
+      "PackagePath": "buildTransitive\\QuanLyNhanSu.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

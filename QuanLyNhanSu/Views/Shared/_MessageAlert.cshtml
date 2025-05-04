@@ -1,0 +1,45 @@
+﻿@{
+    var successMessage = TempData["SuccessMessage"] as string;
+    var errorMessage = TempData["ErrorMessage"] as string;
+}
+<div id="alert-container">
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <script>showAlert('success', '@successMessage');</script>
+    }
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <script>showAlert('danger', '@errorMessage');</script>
+    }
+</div>
+ <div id="alert-container">
+@if (!string.IsNullOrEmpty(successMessage))
+{
+   
+    <div id="success-alert"  class="alert alert-success alert-dismissible fade show" role="alert" >
+        @successMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+  
+    <div id="error-alert"  class="alert alert-danger alert-dismissible fade show" role="alert" >
+        @errorMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+</div>
+
+<script>
+    setTimeout(function () {
+        let alerts = document.querySelectorAll(".alert");
+        alerts.forEach(alert => {
+            alert.classList.remove("show");
+            alert.classList.add("fade");
+            setTimeout(() => alert.remove(), 500);
+        });
+    }, 5000);
+</script>  

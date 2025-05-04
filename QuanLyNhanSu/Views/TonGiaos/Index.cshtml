@@ -1,0 +1,51 @@
+﻿@model IEnumerable<QuanLyNhanSu.Models.TonGiao>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin-top:20px; margin-bottom: 20px">
+    <h2 class="text-center">Quản lý tôn giáo</h2>
+    <button class="btn btn-primary" onclick="showModal('@Url.Action("Create", "TonGiaos")', 'Thêm tôn giáo')">
+        <i class="bi bi-plus-circle"></i> Thêm tôn giáo
+    </button>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách tôn giáo
+    </div>
+    <table class="table  table-bordered table-hover table-sm card-body text-center">
+        <thead class="table-info">
+            <tr>
+                <th>STT</th>
+                <th>Tên tôn giáo </th>
+                <th style="width: 25%;">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 1;
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@index</td>
+                    <td>@Html.DisplayFor(modelItem => item.TenTG)</td>
+
+                    <td text-nowrap p-1>
+                        <div class="d-flex gap-1">
+
+                            <a class="btn btn-warning btn-sm" onclick="showModal('@Url.Action("Edit", "TonGiaos", new { id = @item.IdTG })', 'Chỉnh sửa thông tin tôn giáo')"> <i class="fas fa-edit"></i> Sửa</a>
+
+                            <a asp-action="Delete" asp-route-id="@item.IdTG" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');"><i class="fas fa-trash"></i> Xóa</a>
+                        </div>
+                    </td>
+                </tr>
+                index++;
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<QuanLyNhanSu.Models.KhenThuong_KyLuat>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div style="margin-top:20px; margin-bottom: 20px">
+    <h2 class="text-center">Quản lý khen thưởng, kỷ luật</h2>
+    <a class="btn btn-primary" asp-action="Create" >
+        <i class="bi bi-plus-circle"></i> Khen thưởng - Kỷ luật
+    </a>
+</div>
+<form method="get" class="mt-3">
+    <div class="row g-2 align-items-center">
+        <!-- Chọn năm -->
+        <div class="col-md-2">
+            <label for="Nam" class="form-label fw-bold">Năm</label>
+            <select name="Nam" id="Nam" class="form-select">
+                <option value="">Chọn năm</option>
+                @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                {
+                    <option value="@i" selected="@(ViewBag.Nam == i)">@i</option>
+                }
+            </select>
+        </div>
+
+        <!-- Chọn tháng -->
+        <div class="col-md-2">
+            <label for="Thang" class="form-label fw-bold">Tháng</label>
+            <select name="Thang" id="Thang" class="form-select">
+                <option value="">Chọn tháng</option>
+                @for (int i = 1; i <= 12; i++)
+                {
+                    <option value="@i" selected="@(ViewBag.Thang == i)">@i</option>
+                }
+            </select>
+        </div>
+
+        <!-- Chọn loại quyết định -->
+        <div class="col-md-2">
+            <label for="LoaiQuyetDinh" class="form-label fw-bold">Loại quyết định</label>
+            <select name="LoaiQuyetDinh" id="LoaiQuyetDinh" class="form-select">
+                <option value="">Chọn quyết định</option>
+                <option value="QDKT" selected="@(ViewBag.LoaiQuyetDinh == "QDKT")">Khen thưởng</option>
+                <option value="QDKL" selected="@(ViewBag.LoaiQuyetDinh == "QDKL")">Kỷ luật</option>
+            </select>
+        </div>
+
+        <!-- Nút lọc -->
+        <div class="col-md-2">
+            <label class="d-block form-label invisible">.</label>
+            <button type="submit" class="btn btn-secondary w-500">
+                <i class="fas fa-filter"></i> Lọc
+            </button>
+        </div>
+    </div>
+</form>
+
+<div class="card mb-4 mt-3">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Danh sách 
+    </div>
+    <div class="card-body text-center">
+        <table class="table table-bordered  text-center" id="datatablesSimple">
+            <thead class="table-info">
+                <tr>
+                    <th>STT</th>
+                    <th>SoQD</th>
+                    <th>Mã NV</th>
+                    <th>Nhân viên</th>
+                    <th>Ngay</th>
+                    <th>Lý do</th>
+                    <th>Nội dung</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model!=null && Model.Any())
+                {
+                    int index = 1;
+                    @foreach (var item in Model)
+                    {
+                        
+                        <tr>
+                            <td>@index</td> <!-- Số thứ tự -->
+                            <td>@item.SoKTKL</td>
+                            <td>@item.NhanVien?.MaNV</td><!-- Số quyết định -->
+                            <td>@item.NhanVien?.TenNV</td> <!-- Nhân viên -->
+                            <td>@item.Ngay?.ToString("dd/MM/yyyy")</td> 
+                            <td>@item.LyDo</td> <!-- Lý do -->
+                            <td>@item.NoiDung</td> <!-- Nội dung -->
+                            <td text-nowrap p-1>
+                                
+                                <div class="d-flex gap-1">
+                                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="KhenThuong_KyLuat" asp-route-id="@item.Id"> <i class="fas fa-edit"></i> Edit</a>
+
+                                    <form asp-action="Delete"  asp-controller="KhenThuong_KyLuat" method="post" style="display: inline;">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">
+                                            <i class="fas fa-trash"></i> Xóa
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        index++;
+
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center text-danger">Không có dữ liệu nào!</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

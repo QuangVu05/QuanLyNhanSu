@@ -1,0 +1,56 @@
+﻿@model QuanLyNhanSu.Models.KhenThuong_KyLuat
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 style="margin-top:20px" class="text-center"> Chỉnh sửa khen thưởng - kỷ luật</h3>
+<hr />
+<form asp-action="Edit" method="post" >
+    @Html.AntiForgeryToken()
+    
+    <input type="hidden" asp-for="Id" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="SoKTKL" />
+    <div class="d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="form-group mb-3">
+                <label class="control-label"><strong>Loại quyết định:</strong></label>
+                <input class="form-control" value="@(Model.LoaiQuyetDinh == "QDKT" ? "Khen thưởng" : "Kỷ luật")" readonly />
+                @Html.HiddenFor(model => model.LoaiQuyetDinh)
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="control-label"><strong>Nhân viên:</strong></label>
+                <input class="form-control" value="@Model.NhanVien?.MaVaTen" readonly />
+                <input type="hidden" asp-for="IdNV" />
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Ngay" class="control-label"><strong>Ngày quyết định:</strong></label>
+                <input asp-for="Ngay" type="date" class="form-control" />
+                <span asp-validation-for="Ngay" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="LyDo" class="control-label"><strong>Lý do:</strong></label>
+                <textarea asp-for="LyDo" class="form-control"></textarea>
+                <span asp-validation-for="LyDo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="NoiDung" class="control-label"><strong>Nội dung:</strong></label>
+                <textarea asp-for="NoiDung" class="form-control"></textarea>
+                <span asp-validation-for="NoiDung" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div>
+                    <a asp-action="Index">← Quay lại</a>
+                </div>
+                <button type="submit" class="btn btn-warning"><i class="fas fa-edit"></i> Cập nhật</button>
+            </div>
+        </div>
+    </div>
+</form>

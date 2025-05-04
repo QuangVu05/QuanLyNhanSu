@@ -1,0 +1,21 @@
+﻿@model QuanLyNhanSu.Models.TrinhDo
+<form data-ajax="true" action="@Url.Action("Create", "TrinhDoes")" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+    <div class="modal-body">
+        <div class="form-group">
+            <label asp-for="TenTD" class="control-label"> <strong>Tên trình độ:</strong></label>
+            <input asp-for="TenTD" class="form-control" />
+            <span asp-validation-for="TenTD" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

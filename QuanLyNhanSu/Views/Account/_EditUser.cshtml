@@ -1,0 +1,32 @@
+﻿@model QuanLyNhanSu.ViewModels.EditUserViewModel
+
+<form data-ajax="true" action="@Url.Action("EditUser", "Account")" method="post">
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Email">Email:</label>
+        <input asp-for="Email" class="form-control" readonly />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserName">Tên đăng nhập:</label>
+        <input asp-for="UserName" class="form-control" readonly />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Role">Vai trò:</label>
+        <select asp-for="Role" class="form-control">
+            <option value="HR Manager">Quản lý nhân sự (HR Manager)</option>
+            <option value="Accountant">Kế toán (Accountant)</option>
+            <option value="Admin">Quản trị viên (Admin)</option>
+        </select>
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+        <button type="submit" class="btn btn-primary" id="saveChanges">Lưu</button>
+    </div>
+</form>
+

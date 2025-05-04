@@ -1,0 +1,77 @@
+﻿@model QuanLyNhanSu.Models.TienLuong
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container mt-4 px-4">
+    <div class="card shadow-lg">
+        <div class="card-header bg-info text-white">
+            <h4 class="mb-0">Chi tiết tiền lương</h4>
+        </div>
+        <div class="card-body">
+            <div class="row gx-10">
+                <!-- Cột 1 (Thông tin bên trái) -->
+                <div class="col-md-6 mt-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="mb-2"><span class="fw-bold">Mã nhân viên:</span> @Model.NhanVien?.MaNV</p>
+                            <p class="mb-2"><strong>Tên nhân viên:</strong> @Model.NhanVien?.TenNV</p>
+                            <p class="mb-2"><strong>Số Ngày Công:</strong> @Model.SoNgayCong</p>
+                            <p class="mb-2"><strong>Tháng/Năm:</strong> @Model.Thang/@Model.Nam</p>
+                            <p class="mb-2"><strong>Hệ Số Lương:</strong> @Model.HopDongLaoDong?.HeSoLuong</p>
+                            <p class="mb-0"><strong>Lương Cơ Bản:</strong> @Model.HopDongLaoDong?.LuongCoBan</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cột 2 (Thông tin bên phải) -->
+                <div class="col-md-6 mt-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="mb-2"><strong>Lương Tăng Ca:</strong> @Model.LuongTangCa?.ToString("N0")</p>
+                            <p class="mb-2"><strong>Lương Đã Ứng:</strong> @Model.LuongDaUng?.ToString("N0")</p>
+                            <p class="mb-2">
+                                <strong>Trạng thái nhận lương:</strong>
+                                @if (Model.DaNhanTien)
+                                {
+                                    <span class="badge bg-success">Đã nhận</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Chưa nhận</span>
+                                }
+                            </p>
+                            <p class="mb-2">
+                                <strong>Ngày nhận lương:</strong>
+                                @if (Model.DaNhanTien && Model.NgayNhanTien.HasValue)
+                                {
+                                    @Model.NgayNhanTien?.ToString("dd/MM/yyyy")
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Chưa nhận</span>
+                                }
+                            </p>
+                            <p class="mb-2"><strong>Tổng Lương:</strong> <span class="fw-bold">@Model.TongLuong.ToString("N0")</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Thanh điều hướng dưới cùng -->
+            <div class="d-flex justify-content-between mt-4">
+                <a asp-action="Index" asp-route-thang="@Model.Thang" asp-route-nam="@Model.Nam" >
+                    ← Quay lại
+                </a>
+                <a asp-action="Edit" asp-route-id="@Model.IdTL" class="btn btn-warning btn-sm">
+                    <i class="fas fa-edit"></i> Sửa
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

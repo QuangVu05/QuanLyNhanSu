@@ -1,0 +1,6 @@
+﻿@model string // Đây là kiểu dữ liệu sẽ chứa thông báo lỗi (lỗi chuỗi)
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <div class="text-danger">@Model</div>
+}

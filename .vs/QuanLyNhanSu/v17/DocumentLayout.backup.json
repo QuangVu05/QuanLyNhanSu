@@ -1,0 +1,572 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C# Web\\QuanLyNhanSu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\service layer\\tempimagecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\service layer\\tempimagecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\viewmodels\\tongquanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\viewmodels\\tongquanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\hopdonglaodongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\hopdonglaodongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\nhanviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\nhanviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\tienluongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\tienluongs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\tienluongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\tienluongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\tongiaoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\tongiaoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\hopdonglaodongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\hopdonglaodongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\khenthuong_kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\khenthuong_kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\trinhdoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\trinhdoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\phongbanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\phongbanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\chucvuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\chucvuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\controllers\\bophanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\controllers\\bophanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\tienluongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\tienluongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\tienluongs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\tienluongs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\account\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\account\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\hopdonglaodongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\hopdonglaodongs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\hopdonglaodongs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\hopdonglaodongs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\tienluongs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\tienluongs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\models\\tienluong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\models\\tienluong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\khenthuong_kyluat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\khenthuong_kyluat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|e:\\c# web\\quanlynhansu\\quanlynhansu\\views\\khenthuong_kyluat\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA002D7-DDD9-44C3-BE69-A837449298BF}|QuanLyNhanSu\\QuanLyNhanSu.csproj|solutionrelative:quanlynhansu\\views\\khenthuong_kyluat\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 273,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\appsettings.json",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\appsettings.json",
+              "RelativeToolTip": "QuanLyNhanSu\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-20T00:30:20.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TempImageCleanupService.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Service Layer\\TempImageCleanupService.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Service Layer\\TempImageCleanupService.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Service Layer\\TempImageCleanupService.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Service Layer\\TempImageCleanupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T03:12:32.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NhanViensController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\NhanViensController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\NhanViensController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\NhanViensController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\NhanViensController.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAADwv7sBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:50:09.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T13:03:33.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T00:37:39.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TongQuanViewModel.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\ViewModels\\TongQuanViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\ViewModels\\TongQuanViewModel.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\ViewModels\\TongQuanViewModel.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\ViewModels\\TongQuanViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T08:24:10.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Program.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Program.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T12:09:53.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Models\\NhanVien.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Models\\NhanVien.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Models\\NhanVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T15:06:11.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAwwNYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T13:07:48.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Details.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Details.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Details.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T03:39:21.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\NhanViens\\Details.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\NhanViens\\Details.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\NhanViens\\Details.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\NhanViens\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T08:51:55.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Details.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\TienLuongs\\Details.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Details.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\TienLuongs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T03:10:45.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T00:37:49.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserList.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Account\\UserList.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Account\\UserList.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Account\\UserList.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Account\\UserList.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T12:47:34.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TienLuongsController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TienLuongsController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\TienLuongsController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TienLuongsController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\TienLuongsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:14:04.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Menu.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Shared\\_Menu.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Shared\\_Menu.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Shared\\_Menu.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Shared\\_Menu.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAIBJwDoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T14:45:17.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HopDongLaoDongsController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\HopDongLaoDongsController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\HopDongLaoDongsController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\HopDongLaoDongsController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\HopDongLaoDongsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:49:48.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TonGiaosController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TonGiaosController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\TonGiaosController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TonGiaosController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\TonGiaosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:59:34.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhongBansController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\PhongBansController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\PhongBansController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\PhongBansController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\PhongBansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:59:29.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TrinhDoesController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TrinhDoesController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\TrinhDoesController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\TrinhDoesController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\TrinhDoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:59:38.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChucVusController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\ChucVusController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\ChucVusController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\ChucVusController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\ChucVusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:49:37.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BoPhansController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\BoPhansController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\BoPhansController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\BoPhansController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\BoPhansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:48:22.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Account\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Account\\CreateUser.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Account\\CreateUser.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Account\\CreateUser.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwCMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T07:46:44.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\TienLuongs\\Index.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Index.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\TienLuongs\\Index.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAIBJwGkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:44:57.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\TienLuongs\\Edit.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\TienLuongs\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAIBJwFgAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:41:56.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\TienLuongs\\Create.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\TienLuongs\\Create.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\TienLuongs\\Create.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAmwHgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:36:57.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Edit.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Edit.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAIBJwEEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:24:39.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Create.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\HopDongLaoDongs\\Create.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\HopDongLaoDongs\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAIBJwDoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:10:59.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TienLuong.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Models\\TienLuong.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Models\\TienLuong.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Models\\TienLuong.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Models\\TienLuong.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T13:04:35.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Create.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Create.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Create.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T10:47:38.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Index.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Index.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\KhenThuong_KyLuat\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAIBJwGAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T03:56:31.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "KhenThuong_KyLuatController.cs",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\KhenThuong_KyLuatController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Controllers\\KhenThuong_KyLuatController.cs",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Controllers\\KhenThuong_KyLuatController.cs",
+              "RelativeToolTip": "QuanLyNhanSu\\Controllers\\KhenThuong_KyLuatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T03:35:50.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QuanLyNhanSu\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\C# Web\\QuanLyNhanSu\\QuanLyNhanSu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QuanLyNhanSu\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T00:10:21.762Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 127,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
